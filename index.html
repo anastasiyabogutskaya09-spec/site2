@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розстріляне Відродження - Головна</title>
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+     
+        nav {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #8b0000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            color: #ff3333;
+            border-bottom: 2px solid #ff3333;
+        }
+
+        
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        
+        h1 {
+            color: #ff3333;
+            text-align: center;
+            font-size: 36px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .intro-text {
+            font-size: 18px;
+            text-align: justify;
+            text-indent: 30px;
+        }
+
+       
+        .info-box {
+            background-color: #2d1515;
+            border-left: 5px solid #8b0000;
+            padding: 15px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+
+       
+        .btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 12px 20px;
+            background-color: #8b0000;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: #ff3333;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+            background-color: #111;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <nav>
+        <a href="12005.html" class="active">Головна</a>
+        <a href="22005.html">Діячі</a>
+        <a href="32005.html">Галерея та Цитати</a>
+    </nav>
+
+    <div class="container">
+        <h1>Розстріляне Відродження</h1>
+        
+        <p class="intro-text">
+            <strong>«Розстріляне відродження»</strong> (або Червоний ренесанс) — духовно-культурне та літературно-мистецьке покоління 1920-х і 1930-х років в Україні, яке дало високохудожні твори у галузі літератури, живопису, музики, театру і яке було знищене тоталітарним сталінським режимом.
+        </p>
+
+        <div class="info-box">
+            <strong>Важливий факт:</strong> Початком цього періоду вважають 1923 рік, коли радянська влада оголосила політику «коренізації» (в Україні — українізації). Проте вже на початку 1930-х років почалися масові арешти, які завершилися страшними розстрілами в урочищі Сандармох у 1937 році.
+        </div>
+ <p class="intro-text">
+            Культурні діячі того часу намагалися відійти від провінційності, орієнтувалися на передову європейську культуру і створювали абсолютно нові, модерні течії. Вони вірили у свободу творчості, за що й заплатили власним життям.
+        </p>
+
+        
+        <button class="btn" onclick="showMessage()">Дізнатись більше</button>
+        
+        <p id="secret-message" style="display:none; text-align:center; color: #ff9999; font-style: italic; margin-top: 15px;">
+            Термін «Розстріляне відродження» вперше запропонував діаспорний діяч Юрій Лавріненко у 1959 році, випустивши однойменну антологію в Парижі.
+        </p>
+    </div>
+
+    <footer>
+        <p>© 2026 Богуцька Анастасія</p>
+    </footer>
+
+   
+    <script>
+        function showMessage() {
+            var msg = document.getElementById("secret-message");
+            if (msg.style.display === "none") {
+                msg.style.display = "block";
+            } else {
+                msg.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
