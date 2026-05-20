@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розстріляне Відродження - Діячі</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #8b0000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            color: #ff3333;
+            border-bottom: 2px solid #ff3333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff3333;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+        .grid {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #222;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #ff3333;
+            box-shadow: 0 6px 20px rgba(255, 51, 51, 0.2);
+        }
+
+        
+        .card img {
+            width: 130px;
+            height: 170px;
+            object-fit: cover; 
+            border-radius: 6px;
+            border: 1px solid #444;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+            flex-shrink: 0;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            color: #ff9999;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .life-years {
+            font-style: italic;
+            color: #aaa;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+            background-color: #111;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="22005.html" class="active">Діячі</a>
+        <a href="32005.html">Галерея та Цитати</a>
+    </nav>
+
+    <div class="container">
+        <h2>Творці незабутнього покоління</h2>
+
+        <div class="grid">
+            <div class="card">
+                <img src="1.jpg" alt="Микола Хвильовий">
+                <div class="card-content">
+                    <h3>Микола Хвильовий</h3>
+                    <div class="life-years">1893 – 1933</div>
+                    <p>Письменник, поет, публіцист. Засновник ВАПЛІТЕ (Вільної академії пролетарської літератури). Його гасло «Европа чи Просвіта?» та заклик «Геть від Москви!» стали орієнтиром для нової української еліти. Покінчив життя самогубством на знак протесту проти Голодомору та арештів друзів.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="2.jpg" alt="Лесь Курбас">
+<div class="card-content">
+                    <h3>Лесь Курбас</h3>
+                    <div class="life-years">1887 – 1937</div>
+                    <p>Геніальний український режисер, актор, теоретик театру. Створив філософський театр «Березіль» у Харкові, який вивів українське театральне мистецтво на європейський рівень. Був заарештований у 1933 році та розстріляний в Сандармоху.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="3.jpg" alt="Валер'ян Підмогильний">
+                <div class="card-content">
+                    <h3>Валер'ян Підмогильний</h3>
+                    <div class="life-years">1901 – 1937</div>
+                    <p>Один із найвидатніших прозаїків українського модернізму, майстер психологічного роману, перекладач французької класики. Його знаменитий роман «Місто» розкриває складну психологію людини, що намагається завоювати міський простір. Став жертвою розстрілів 1937 року.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Богуцька Анастасія</p>
+    </footer>
+
+</body>
+</html>
